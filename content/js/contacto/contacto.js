@@ -18,21 +18,32 @@ class ClsContacto {
     }
     AgregaEventos(){
         $(`#${ this.Propiedades.botonEnviar }`).click(() => {
+            if (this.valida.validForm()){
+
+            }
         });
     }
     AgregaReglas() {
-        $(`#${ this.propiedades.formulario }`).validate({
-            rules: {
-                fNombre: 'rquired',
-                fCorreo: 'rquired',
-                fMensaje: 'rquired',
-            },
-            messages: {
-                fNombre: 'Este campo Nombre es requerido.',
-                fCorreo: 'Este campo Correo es requerido.',
-                fMensaje: 'Este campo Mensaje es requerido.'
-            }
-        });
+        this.valida = new Validador([{
+            campo: `#${ this.propiedades.fNombre }`,
+            reglas: [{
+                regla: 'required'
+            }]
+        },{
+            campo: `#${ this.propiedades.fCorreo }`,
+            reglas: [{
+                regla: 'required',
+            },{
+                regla: 'format',
+                mensaje: 'El formato de correo no es valido.'
+            }]
+        },{
+            campo: `#${ this.propiedades.fMensaje }`,
+            reglas: [{
+                regla: 'required'
+            }]
+        }]);
+        this.valida.addEvents();
     }
 }
 $(() => {

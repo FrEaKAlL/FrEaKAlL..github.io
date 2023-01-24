@@ -543,24 +543,6 @@ footer {
 .color-telefono label {
     cursor: pointer;
 }
-.color-facebook {
-    background-color: #344c8c;
-    margin-left: -1rem;
-    padding: 0.6rem 1.2rem;
-    border-radius: 0 1rem 1rem 0;
-}
-.color-facebook label {
-    cursor: pointer;
-}
-.color-insta {
-    background-color: #ab1ca9;
-    margin-left: -1rem;
-    padding: 0.6rem 1.2rem;
-    border-radius: 0 1rem 1rem 0;
-}
-.color-insta label {
-    cursor: pointer;
-}
 .link-red {
     display: contents;
 }
@@ -569,6 +551,12 @@ footer {
     flex-direction: column;
 }
 .error {
+    border: 0.1rem solid #ff3333;
+}
+.msjValid{
     margin: 0 0 0 2rem;
-    color: #ff3333;
+    background-color: #ff3333;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 0.3rem 1.2rem;
+    border-radius: 0.4rem;
 }

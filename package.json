@@ -1,0 +1,20 @@
+{
+  "name": "vinculocanino",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FrEaKAlL/VinculoCanino.git"
+  },
+  "keywords": [],
+  "author": "FrEaK0121",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FrEaKAlL/VinculoCanino/issues"
+  },
+  "homepage": "https://github.com/FrEaKAlL/VinculoCanino#readme",
+  "description": ""
+}

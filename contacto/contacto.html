@@ -10,7 +10,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/content/css/normalize.css">
     <link rel="stylesheet" href="/content/css/app.css">
-    <script src="/content/js/static.js"></script>
+    <script src="/content/js/jquery/jquery.min.js"></script>
+    <script src="/content/js/validator/validator.js"></script>
+    <script src="/content/js/contacto/contacto.js"></script>
+    <script defer src="/content/js/icons/solid.min.js"></script>
+    <script defer src="/content/js/icons/brands.min.js"></script>
+    <script defer src="/content/js/icons/fontawesome.min.js"></script>
     <link rel="icon" type="image/x-icon" href="/content/img/logo-vc.ico">
 </head>
 <body>
@@ -29,7 +34,7 @@
                 <nav class="nav-menu-principal">
                     <a href="/index.html#seccion-acerca-de">Acerca de</a>
                     <a href="/index.html#seccion-servicios">Servicios</a>
-                    <a href="/galeria/galeria.html">Galeria</a>
+                    <a href="/galeria/galeria.html#seccion-galeria">Galeria</a>
                     <a href="/contacto/contacto.html">Contacto</a>
                 </nav>
             </div>
@@ -37,7 +42,58 @@
         <div class="linea-verde"></div>
     </header>
     <main>
-        
+        <section class="contenedor">
+            <h2 class="texto-center" id="seccion-contacto">Contacto</h2>
+            <div class="contenedor-contacto">
+                <div class="redes">
+                    <h3 class="texto-center">Contacto por WhatsApp</h3>
+                    <div class="red-contacto">
+                        <a class="link-red" href="https://wa.me/5215536384048" target="_blank">
+                            <img src="/content/img/whatsapp.png" alt="WhatsApp VinculoCanino®">
+                            <div class="color-telefono">
+                                <label> Telefono: 55 3638 4048</label>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="formulario">
+                    <h3 class="texto-center">Contacto por Correo</h3>
+                    <form id="formulario-contacto" class="aling-form">
+                        <div class="cont-form">
+                            <span class="campos">
+                                <label>Nombre *</label>
+                                <span class="valor-regla">
+                                    <input id="fNombre" name="fNombre" placeholder="Nombre Completo" class="form-control" type="text" required>
+                                </span>
+                            </span>
+                            <span class="campos">
+                                <label>Correo *</label>
+                                <span class="valor-regla">
+                                    <input id="fCorreo" name="fCorreo" placeholder="contacto@vinculocanino.com" class="form-control" type="email" required>
+                                </span>
+                            </span>
+                            <span class="campos">
+                                <label>Teléfono</label>
+                                <span class="valor-regla">
+                                    <input id="fTelefono" name="fTelefono" class="form-control" type="number">
+                                </span>
+                            </span>
+                            <span class="campos">
+                                <label>Mensaje *</label>
+                                <span class="valor-regla">
+                                    <textarea id="fMensaje" name="fMensaje" placeholder="Motivo de contacto" rows="5" cols="33" class="form-control form-area" required></textarea>
+                                </span>
+                            </span>
+                        </div>
+                        <button class="btn btn-verde" type="button" id="btn-enviar">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            Enviar
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+        </section>
     </main>
     <footer>
         <div class="linea-verde"></div>

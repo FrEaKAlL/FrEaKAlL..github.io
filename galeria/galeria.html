@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="/content/css/normalize.css">
     <link rel="stylesheet" href="/content/css/app.css">
     <link rel="icon" type="image/x-icon" href="/content/img/logo-vc.ico">
+    <script src="/content/js/jquery/jquery.min.js"></script>
+    <script src="/content/js/static.js"></script>
 </head>
 <body>
     <header>
@@ -37,49 +39,50 @@
     </header>
     <main>
         <section class="contenedor galeria-sec">
+            
             <h2 class="texto-center" id="seccion-galeria">Galeria</h2>
             <div class="imagenes">
-                <a class="imagen" href="/galeria/img/img-1.jpg">
-                    <img loading="lazy" src="/galeria/img/img-1.jpg" alt="Imagen 1">
+                <a class="imagen">
+                    <img loading="lazy" src="/galeria/img/img-1.jpg" onclick="abriImagen('/galeria/img/img-1.jpg','Imagen 1')" alt="Imagen 1">
                 </a>
-                <a class="imagen" href="/galeria/img/img-2.jpg">
-                    <img loading="lazy" src="/galeria/img/img-2.jpg" alt="Imagen 2">
+                <a class="imagen">
+                    <img loading="lazy" src="/galeria/img/img-2.jpg" onclick="abriImagen('/galeria/img/img-2.jpg','Imagen 2')" alt="Imagen 2">
                 </a>
-                <a class="imagen" href="/galeria/img/img-3.jpg">
-                    <img loading="lazy" src="/galeria/img/img-3.jpg" alt="Imagen 3">
+                <a class="imagen">
+                    <img loading="lazy" src="/galeria/img/img-3.jpg" onclick="abriImagen('/galeria/img/img-3.jpg','Imagen 3')" alt="Imagen 3">
                 </a>
-                <a class="imagen" href="/galeria/img/img-4.jpg">
-                    <img loading="lazy" src="/galeria/img/img-4.jpg" alt="Imagen 4">
+                <a class="imagen">
+                    <img loading="lazy" src="/galeria/img/img-4.jpg" onclick="abriImagen('/galeria/img/img-4.jpg','Imagen 4')" alt="Imagen 4">
                 </a>
-                <a class="imagen" href="/galeria/img/img-5.jpg">
-                    <img loading="lazy" src="/galeria/img/img-5.jpg" alt="Imagen 5">
+                <a class="imagen">
+                    <img loading="lazy" src="/galeria/img/img-5.jpg" onclick="abriImagen('/galeria/img/img-5.jpg','Imagen 5')" alt="Imagen 5">
                 </a>
-                <a class="imagen" href="/galeria/img/img-6.jpg">
-                    <img loading="lazy" src="/galeria/img/img-6.jpg" alt="Imagen 6">
+                <a class="imagen">
+                    <img loading="lazy" src="/galeria/img/img-6.jpg" onclick="abriImagen('/galeria/img/img-6.jpg','Imagen 6')" alt="Imagen 6">
                 </a>
-                <a class="imagen" href="/galeria/img/img-7.jpg">
-                    <img loading="lazy" src="/galeria/img/img-7.jpg" alt="Imagen 7">
+                <a class="imagen">
+                    <img loading="lazy" src="/galeria/img/img-7.jpg" onclick="abriImagen('/galeria/img/img-7.jpg','Imagen 7')" alt="Imagen 7">
                 </a>
-                <a class="imagen" href="/galeria/img/img-8.jpg">
-                    <img loading="lazy" src="/galeria/img/img-8.jpg" alt="Imagen 8">
+                <a class="imagen">
+                    <img loading="lazy" src="/galeria/img/img-8.jpg" onclick="abriImagen('/galeria/img/img-8.jpg','Imagen 8')" alt="Imagen 8">
                 </a>
-                <a class="imagen" href="/galeria/img/img-9.jpg">
-                    <img loading="lazy" src="/galeria/img/img-9.jpg" alt="Imagen 9">
+                <a class="imagen">
+                    <img loading="lazy" src="/galeria/img/img-9.jpg" onclick="abriImagen('/galeria/img/img-9.jpg','Imagen 9')" alt="Imagen 9">
                 </a>
-                <a class="imagen" href="/galeria/img/img-10.jpg">
-                    <img loading="lazy" src="/galeria/img/img-10.jpg" alt="Imagen 10">
+                <a class="imagen">
+                    <img loading="lazy" src="/galeria/img/img-10.jpg" onclick="abriImagen('/galeria/img/img-10.jpg','Imagen 10')" alt="Imagen 10">
                 </a>
-                <a class="imagen" href="/galeria/img/img-11.jpg">
-                    <img loading="lazy" src="/galeria/img/img-11.jpg" alt="Imagen 11">
+                <a class="imagen">
+                    <img loading="lazy" src="/galeria/img/img-11.jpg" onclick="abriImagen('/galeria/img/img-11.jpg','Imagen 11')" alt="Imagen 11">
                 </a>
-                <a class="imagen" href="/galeria/img/img-12.jpg">
-                    <img loading="lazy" src="/galeria/img/img-12.jpg" alt="Imagen 12">
+                <a class="imagen">
+                    <img loading="lazy" src="/galeria/img/img-12.jpg" onclick="abriImagen('/galeria/img/img-12.jpg','Imagen 12')" alt="Imagen 12">
                 </a>
-                <a class="imagen" href="/galeria/img/img-13.jpg">
-                    <img loading="lazy" src="/galeria/img/img-13.jpg" alt="Imagen 13">
+                <a class="imagen">
+                    <img loading="lazy" src="/galeria/img/img-13.jpg" onclick="abriImagen('/galeria/img/img-13.jpg','Imagen 13')" alt="Imagen 13">
                 </a>
-                <a class="imagen" href="/galeria/img/img-14.jpg">
-                    <img loading="lazy" src="/galeria/img/img-14.jpg" alt="Imagen 14">
+                <a class="imagen">
+                    <img loading="lazy" src="/galeria/img/img-14.jpg" onclick="abriImagen('/galeria/img/img-14.jpg','Imagen 14')" alt="Imagen 14">
                 </a>
             </div>
         </section>
@@ -110,5 +113,9 @@
         </div>
         <div class="copyright texto-center">Copyright 2022 Ciudad de Mexico Edo. Mex</div>
     </footer>
+    <div class="fill-img oculto">
+        <img id="fill-img-pant" loading="lazy" src="" alt="">
+        <span class="close-img" onclick="cierraImg()">X</span>
+    </div>
 </body>
 </html>
